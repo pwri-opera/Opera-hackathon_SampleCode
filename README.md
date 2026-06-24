@@ -65,6 +65,7 @@ $ ros2 launch ros_tcp_endpoint endpoint.py
 
 
 - 正常に接続されると, LinuxPCのターミナルにOKとlogが表示される.
+  
 `[default_server_endpoint-1] [INFO] [1782343553.791738689] [UnityEndpoint]: RegisterPublisher(clock, <class 'rosgraph_msgs.msg._clock.Clock'>) OK`
 
 
