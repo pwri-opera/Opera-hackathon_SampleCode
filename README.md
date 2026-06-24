@@ -1,10 +1,4 @@
-# Opera-Sim ハッカソンサンプルコード実行手順
-- ここで使用するハッカソンサンプルコードは, ROS2 Humble環境で動作確認を行っているため, 事前にROS2のバージョンを確認しておくこと.
-
-- 確認方法
-```bash
-$ echo $ROS_DISTRO
-```
+# Opera-Sim hackathon Sample Code
 
 ## 依存パッケージ
 - 以下のパッケージをros2_ws/srcにcloneする.
