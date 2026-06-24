@@ -16,12 +16,13 @@ $ echo $ROS_DISTRO
 
 ```bash
 # example
+$ cd ~/ros2_ws/src
 $ git colne https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
 ```
 
 ## build手順
 ```bash
-$ cd ~/ros2_ws/src
+$ cd ~/ros2_ws
 ```
 各パッケージのブランチを確認.
 本サンプルコードを実行するためには以下の条件でビルドを行う.
@@ -40,6 +41,7 @@ $ colcon build --packages-select ic120_navigation task_manager zx200_autonomy ic
 ```
 
 - ビルド完了後, 以下の通りにsouceを行う.
+
 ※ これを行わないと, buildを行った結果がrosシステムに反映されない.
 
 ```bash
