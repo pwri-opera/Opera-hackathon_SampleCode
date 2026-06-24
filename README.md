@@ -55,7 +55,7 @@ $ ros2 launch ros_tcp_endpoint endpoint.py
 #注意：endpoint.pyはtab補完が効かない為手入力を行う
 ```
 - 正常に接続されると, LinuxPCのターミナルにOKとlogが表示される.
-'[default_server_endpoint-1] [INFO] [1782343553.791738689] [UnityEndpoint]: RegisterPublisher(clock, <class 'rosgraph_msgs.msg._clock.Clock'>) OK'
+`[default_server_endpoint-1] [INFO] [1782343553.791738689] [UnityEndpoint]: RegisterPublisher(clock, <class 'rosgraph_msgs.msg._clock.Clock'>) OK`
 
 
 2. Linux PCとシミュレータPC間の通信ができたら, Linux PCで別のターミナルを立ち上げ以下を実行する.
