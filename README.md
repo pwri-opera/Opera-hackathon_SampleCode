@@ -54,6 +54,10 @@ $ source install/setup.bash
 $ ros2 launch ros_tcp_endpoint endpoint.py
 #注意：endpoint.pyはtab補完が効かない為手入力を行う
 ```
+
+<img width="245" height="18" alt="tcp_endpoint_end" src="https://github.com/user-attachments/assets/d5d16a34-122b-4784-ae09-2cb42060a0de" />
+<img width="167" height="46" alt="tcp_endpoint_start" src="https://github.com/user-attachments/assets/912fab06-a14f-47da-a8f0-8239e8920b20" />
+
 - 正常に接続されると, LinuxPCのターミナルにOKとlogが表示される.
 `[default_server_endpoint-1] [INFO] [1782343553.791738689] [UnityEndpoint]: RegisterPublisher(clock, <class 'rosgraph_msgs.msg._clock.Clock'>) OK`
 
