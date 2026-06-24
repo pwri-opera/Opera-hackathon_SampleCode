@@ -1,6 +1,11 @@
 # Opera-Sim ハッカソンサンプルコード実行手順
 - ここで使用するハッカソンサンプルコードは, ROS2 Humble環境で動作確認を行っているため, 事前にROS2のバージョンを確認しておくこと.
 
+- 確認方法
+```bash
+$ echo $ROS_DISTRO
+```
+
 ## 依存パッケージ
 - 以下のパッケージをros2_ws/srcにcloneする.
 - [ros_tcp_endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git)
@@ -21,13 +26,13 @@ $ cd ~/ros2_ws/src
 各パッケージのブランチを確認.
 本サンプルコードを実行するためには以下の条件でビルドを行う.
 
-|package|指定branch|
+|package|Branch to specify|
 |:---|:---|
 |ros_tcp_endpoint|main|
 |ic120_ros|main|
 |task_manager|main|
 |zx200_autonomy|hackathon|
-|ic12_autonomy|main|
+|ic120_autonomy|main|
 
 - 各パッケージが指定したブランチにいることを確認した後, 以下の通りにbuildを行う.
 ```bash
