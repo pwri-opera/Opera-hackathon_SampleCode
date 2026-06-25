@@ -7,20 +7,20 @@ https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 ## 依存パッケージ
 - 以下のパッケージをros2_ws/srcにcloneする.
 - [ros_tcp_endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git)
-- [ic120_ros2](https://github.com/pwri-opera/ic120_ros.git)
+- [ic120_ros2](https://github.com/pwri-opera/ic120_ros2.git)
 - [task_manager](https://github.com/Ryoya1012/Opera-sim_hackathon-Sample.git)
 - [zx200_autonomy](https://github.com/Ryoya1012/ZX200_autonomy_state_machine.git)
 - [ic120_autonomy](https://github.com/Ryoya1012/Opera-sim_ic120_hackathon.git)
 
 ```bash
 # example
-$ cd ~/ros2_ws/src
-$ git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+cd ~/ros2_ws/src
+git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
 ```
 
 ## build手順
 ```bash
-$ cd ~/ros2_ws
+cd ~/ros2_ws
 ```
 各パッケージのブランチを確認.
 本サンプルコードを実行するためには以下の条件でビルドを行う.
@@ -35,7 +35,7 @@ $ cd ~/ros2_ws
 
 - 各パッケージが指定したブランチにいることを確認した後, 以下の通りにbuildを行う.
 ```bash
-$ colcon build --symlink-install --packages-select ic120_navigation task_manager zx200_autonomy ic120_autonomy ros_tcp_endpoint
+colcon build --symlink-install --packages-select ic120_navigation task_manager zx200_autonomy ic120_autonomy ros_tcp_endpoint
 ```
 
 - ビルド完了後, 以下の通りにsourceを行う.
@@ -43,7 +43,7 @@ $ colcon build --symlink-install --packages-select ic120_navigation task_manager
 ※ これを行わないと, buildを行った結果がrosシステムに反映されない.
 
 ```bash
-$ source install/setup.bash
+source install/setup.bash
 ```
 
 ## 実行方法(2つのターミナルを使用)
@@ -51,7 +51,7 @@ $ source install/setup.bash
 1. ROS2(Linux PC)とUnity(DAIV)をLANケーブルで接続する
 
 ```bash
-$ ros2 launch ros_tcp_endpoint endpoint.py
+ros2 launch ros_tcp_endpoint endpoint.py
 #注意：endpoint.pyはtab補完が効かない為手入力を行う
 ```
 ### Unity側での設定
@@ -72,7 +72,7 @@ $ ros2 launch ros_tcp_endpoint endpoint.py
 
 2. Linux PCとシミュレータPC間の通信ができたら, Linux PCで別のターミナルを立ち上げ以下を実行する.
 ```bash
-$ ros2 launch task_manager hackathon_launch.py
+ros2 launch task_manager hackathon_launch.py
 ```
 
 すると, zx200(ドラグショベル)が指定回数の掘削・積込動作を行い, ic120(クローラダンプ)が移動.
