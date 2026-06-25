@@ -12,6 +12,7 @@ https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 - [Opera-sim_hackathon-Sample](https://github.com/Ryoya1012/Opera-sim_hackathon-Sample.git)
 - [ZX200_autonomy_state_machine](https://github.com/Ryoya1012/ZX200_autonomy_state_machine.git)
 - [ic120_autonomy](https://github.com/Ryoya1012/Opera-sim_ic120_hackathon.git)
+- [com3_ros](https://github.com/pwri-opera/com3_ros.git)
 
 ```bash
 # example
@@ -38,7 +39,7 @@ cd ~/ros2_ws
 
 - 各パッケージが指定したブランチにいることを確認した後, 以下の通りにbuildを行う.
 ```bash
-colcon build --symlink-install --packages-select ic120_navigation task_manager zx200_autonomy ic120_autonomy ros_tcp_endpoint
+colcon build --symlink-install --packages-up-to ic120_navigation task_manager zx200_autonomy ic120_autonomy ic120_unity com3_ros ros_tcp_endpoint
 ```
 
 - ビルド完了後, 以下の通りにsourceを行う.
