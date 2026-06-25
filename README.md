@@ -31,11 +31,12 @@ cd ~/ros2_ws
 
 |package|Branch to specify|
 |:---|:---|
-|ros_tcp_endpoint|main|
+|ros_tcp_endpoint|main-ros2|
 |ic120_ros2|main|
 |Opera-sim_hackathon-Sample|main|
 |ZX200_Autonomy_state_machine|hackathon|
 |ic120_autonomy|main|
+|com3_ros|main|
 
 - 各パッケージが指定したブランチにいることを確認した後, 以下の通りにbuildを行う.
 ```bash
