@@ -78,3 +78,9 @@ $ ros2 launch task_manager hackathon_launch.py
 すると, zx200(ドラグショベル)が指定回数の掘削・積込動作を行い, ic120(クローラダンプ)が移動.
 指定された放土位置に到着後, ベゼル(荷台)を上げ下げし放土を行う. 放土完了後, ic120は, はじめの位置に移動し, サンプルコードが終了する.
 
+## ソフトウェアシステム
+ros2 launch task_manager hackathon_launch.py実行時のノード/トピックパイプライン(rqt_graph)
+<div align="center">
+  <img width="600" alt="rosgraph" src="https://github.com/user-attachments/assets/2d5274f4-0f25-40da-a807-3020f55082b4" />
+</div>
+
