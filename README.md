@@ -1,5 +1,6 @@
 # Opera-Sim hackathon Sample Code
-
+注意) ic120が排土地点において, ベゼルがチルトしない不具合が発生する場合がある.
+      その時は, 一度シミュレータを落とし, ROS側で再度build, sourceを行いはじめからシミュレーションを行う.
 
 https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 
