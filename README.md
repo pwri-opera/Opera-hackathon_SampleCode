@@ -26,7 +26,7 @@ cd ~/ros2_ws
 各パッケージのブランチを確認.
 本サンプルコードを実行するためには以下の条件でビルドを行う.
 
-また, 本リポジトリにある"waypoint.csv"をros2_ws直下に保存しておく.
+また, 本リポジトリにある**""waypoint.csv"をros2_ws直下に保存**しておく.
 
 |package|Branch to specify|
 |:---|:---|
