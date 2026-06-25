@@ -35,7 +35,7 @@ $ cd ~/ros2_ws
 
 - 各パッケージが指定したブランチにいることを確認した後, 以下の通りにbuildを行う.
 ```bash
-$ colcon build --packages-select ic120_navigation task_manager zx200_autonomy ic120_autonomy ros_tcp_endpoint
+$ colcon build --symlink-install --packages-select ic120_navigation task_manager zx200_autonomy ic120_autonomy ros_tcp_endpoint
 ```
 
 - ビルド完了後, 以下の通りにsourceを行う.
