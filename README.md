@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 ```bash
 # example
 $ cd ~/ros2_ws/src
-$ git colne https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+$ git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
 ```
 
 ## build手順
@@ -38,7 +38,7 @@ $ cd ~/ros2_ws
 $ colcon build --packages-select ic120_navigation task_manager zx200_autonomy ic120_autonomy ros_tcp_endpoint
 ```
 
-- ビルド完了後, 以下の通りにsouceを行う.
+- ビルド完了後, 以下の通りにsourceを行う.
 
 ※ これを行わないと, buildを行った結果がrosシステムに反映されない.
 
@@ -55,7 +55,7 @@ $ ros2 launch ros_tcp_endpoint endpoint.py
 #注意：endpoint.pyはtab補完が効かない為手入力を行う
 ```
 ### Unity側での設定
-- UnityEditorの上部ツールバーからRobotics->ROS Settingを開き, "ROS IP Adress", "ROS Port"のところにROS側のIPアドレスおよびポート番号(default : 10000)を入力.
+- UnityEditorの上部ツールバーからRobotics->ROS Settingを開き, "ROS IP Address", "ROS Port"のところにROS側のIPアドレスおよびポート番号(default : 10000)を入力.
 - "Protocol"が"ROS2"になっていることを確認.
 
 <div align="center">
