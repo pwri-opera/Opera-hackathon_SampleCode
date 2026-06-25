@@ -8,7 +8,7 @@ https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 - 以下のパッケージをros2_ws/srcにcloneする.
 - [ros_tcp_endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git)
 - [ic120_ros2](https://github.com/pwri-opera/ic120_ros2.git)
-- [task_manager](https://github.com/Ryoya1012/Opera-sim_hackathon-Sample.git)
+- [Opera-sim_hackathon-Sample](https://github.com/Ryoya1012/Opera-sim_hackathon-Sample.git)
 - [ZX200_autonomy_state_machine](https://github.com/Ryoya1012/ZX200_autonomy_state_machine.git)
 - [ic120_autonomy](https://github.com/Ryoya1012/Opera-sim_ic120_hackathon.git)
 
@@ -28,9 +28,9 @@ cd ~/ros2_ws
 |package|Branch to specify|
 |:---|:---|
 |ros_tcp_endpoint|main|
-|ic120_ros|main|
-|task_manager|main|
-|zx200_autonomy|hackathon|
+|ic120_ros2|main|
+|Opera-sim_hackathon-Sample|main|
+|ZX200_Autonomy_state_machine|hackathon|
 |ic120_autonomy|main|
 
 - 各パッケージが指定したブランチにいることを確認した後, 以下の通りにbuildを行う.
@@ -72,7 +72,7 @@ ros2 launch ros_tcp_endpoint endpoint.py
 
 2. Linux PCとシミュレータPC間の通信ができたら, Linux PCで別のターミナルを立ち上げ以下を実行する.
 ```bash
-ros2 launch task_manager hackathon_launch.py
+ros2 launch task_manager hackathon_sample.launch.py
 ```
 
 すると, zx200(ドラグショベル)が指定回数の掘削・積込動作を行い, ic120(クローラダンプ)が移動.
