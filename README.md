@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 - [ros_tcp_endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git)
 - [ic120_ros2](https://github.com/pwri-opera/ic120_ros2.git)
 - [task_manager](https://github.com/Ryoya1012/Opera-sim_hackathon-Sample.git)
-- [zx200_autonomy](https://github.com/Ryoya1012/ZX200_autonomy_state_machine.git)
+- [ZX200_autonomy_state_machine](https://github.com/Ryoya1012/ZX200_autonomy_state_machine.git)
 - [ic120_autonomy](https://github.com/Ryoya1012/Opera-sim_ic120_hackathon.git)
 
 ```bash
