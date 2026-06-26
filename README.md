@@ -32,7 +32,7 @@ cd ~/ros2_ws
 |package|Branch to specify|
 |:---|:---|
 |ros_tcp_endpoint|main-ros2|
-|ic120_ros2|main|
+|ic120_ros2|feature/tmp_ic120_unity_setting|
 |Opera-sim_hackathon-Sample|main|
 |ZX200_Autonomy_state_machine|hackathon|
 |ic120_autonomy|main|
