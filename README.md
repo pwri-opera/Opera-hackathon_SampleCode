@@ -1,6 +1,4 @@
 # Opera-Sim hackathon Sample Code
-注意) ic120が排土地点において, ベゼルがチルトしない不具合が発生する場合がある.
-      その時は, 一度シミュレータを落とし, ROS側で再度build, sourceを行いはじめからシミュレーションを行う.
 
 https://github.com/user-attachments/assets/c312b7c1-5d2b-4232-a7d8-8e70a7bcc8b6
 
@@ -84,6 +82,38 @@ ros2 launch task_manager hackathon_sample.launch.py
 指定された放土位置に到着後, ベゼル(荷台)を上げ下げし放土を行う. 放土完了後, ic120は, はじめの位置に移動し, サンプルコードが終了する.
 
 ## ソフトウェアシステム
+
+### hackathon_sample_manager_node
+- 主な役割
+システム全体の作業順序を管理する上位ノードである.
+zx200とic120の作業完了通知を受信し, 現在の作業状態に応じて次の指令を送信する.
+
+- 管理する作業
+1. zx200の掘削開始
+2. zx200の掘削完了待ち
+3. ic120の排土場所への搬送
+4. ic120の荷台上昇
+5. ic120の荷台下降
+6. ic120のホーム位置への帰還
+7. 全作業完了
+
+- 主なPublishトピック
+|トピック|型|内容|
+|/start_dig|std_msgs/Bool|zx200の掘削開始|
+|/ic120/start_transport|std_msgs/Bool|ic120の搬送開始|
+|/ic120/tilt_up_cmd|std_msgs/Bool|ic120の荷台上昇|
+|/ic120/tilt_down_cmd|std_msgs/Bool|ic120の荷台下降|
+|/ic120/start_return|std_msgs/Bool|ic120の帰還開始|
+
+
+- 主なSubscribeトピック
+|トピック|型|内容|
+|/end_dig|std_msgs/Bool|zx200の掘削完了|
+|/ic120/arrived_dump|std_msgs/Bool|ic120の排土場所到着|
+|/ic120/dump_completed|std_msgs/Bool|排土動作完了|
+|/ic120/tilt_down_completed|std_msgs/Bool|荷台下降完了|
+|/ic120/arrived_home|std_msgs/Bool|ic120のホーム帰還完了|
+
 ros2 launch task_manager hackathon_launch.py実行時のノード/トピックパイプライン(rqt_graph)
 <div align="center">
   <img width="600" alt="rosgraph" src="https://github.com/user-attachments/assets/2d5274f4-0f25-40da-a807-3020f55082b4" />
