@@ -143,14 +143,11 @@ Nav2 または Unity
 
 特にic120では, 責務を次のように分離している.
 
-ic120_autonomy_node
- |_ 走行制御
+ic120_autonomy_node ->  走行制御
 
-dump_release_controller
- |_ 荷台制御
+dump_release_controller ->  荷台制御
 
-task_manager
- |_ 両者の作業順序を管理
+task_manager-> 両者の作業順序を管理
 
 この分離により, 走行制御と荷台制御の処理が競合することを防ぎ, 各機能を独立して試験できる構成となっている.
 
